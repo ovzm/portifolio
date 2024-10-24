@@ -87,6 +87,42 @@ scroll-snap-type: y mandatory;
     height: 25px;
 }
 
+/* ! MENU */
+.header .headerMenu {
+    position: relative; 
+}
+
+.header .headerMenu .popup {
+    display: none; 
+    position: absolute; 
+    top: 0; 
+    right: 0;
+    background-color: white;
+    border-radius: 10px 0 10px 10px;
+    padding: 10px;
+}
+
+.header .headerMenu .popup .popup-content {
+    position: relative;
+    width: 200px; 
+}
+
+.header .headerMenu .popup .popup-content .close {
+    position: absolute;
+    right: 0;
+    top: 0;
+    cursor: pointer;
+}
+
+.header .headerMenu .popup .popup-content .close img{
+    width: 20px;
+    height: 20px;
+}
+
+.header .headerMenu button {
+    cursor: pointer;
+}
+
 /* ! SECTION */
 
 .section {
@@ -124,7 +160,4 @@ background-position: center;
     background-size: cover;
     background-position: center;
 }
-
-
-
 

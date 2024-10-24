@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="script.js">
     <link rel="icon" href="assets/icon_logo/logo-v.png">
     <title>Portifólio - Victor Zawacki Monteiro</title>
 </head>
@@ -25,9 +26,23 @@
                 </nav>
             </div>
             <div class="headerMenu">
-                <button>
+                <button id="openPopupBtn">
                     <img src="assets/icon_logo/interface.png" alt="">
                 </button>
+                <div id="popup" class="popup">
+                    <div class="popup-content">
+                        <div class="popup-close">
+                            <span class="close"><img src="assets/icon_logo/close.png" alt=""></span>
+                        </div>
+                        <div>
+                            <ul>
+                                <li><a href="">Home</a></li>
+                                <li><a href="">Currículo</a> </li>
+                                <li><a href="">Certificados</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </header>
@@ -70,5 +85,7 @@
         </div>
     </section>
     
+    <script src="script.js"></script>
+
 </body>
 </html>
