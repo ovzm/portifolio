@@ -51,8 +51,8 @@ table {
   
 body {
 font-family: Arial, sans-serif;
-overflow-x: hidden;
-scroll-snap-type: y mandatory; 
+overflow: hidden; /* Remove a barra de rolagem */
+scroll-snap-type: y mandatory;
 }
 
 /* ! SECTIONS */
@@ -214,3 +214,10 @@ scroll-snap-type: y mandatory;
     color: white;
     font-size: 75px;
 }
+
+
+
+
+
+
+
