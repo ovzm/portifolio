@@ -215,8 +215,50 @@ scroll-snap-type: y mandatory;
     font-size: 75px;
 }
 
+/* ! ABOUT ME */
 
+.content{
+    display: flex;
+}
 
+.content-aboutMe{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 6rem;
+}
+
+.content-aboutMe_img {
+    width: 30%;
+}
+
+.content-aboutMe_img img{
+    width: 500px;
+    border-radius: 100px;
+}
+
+.content-aboutMe_text{
+    width: 30%;
+}
+
+.content-aboutMe_text .teste{
+    display: flex;
+    width: auto;
+    margin-bottom: 3rem;
+    justify-content: left;
+}
+
+.content-aboutMe_text .teste h1{
+    font-size: 50px;
+    border-bottom: 4px solid #00DFFC;
+}
+
+.content-aboutMe_text h2{
+    font-size: 20px;
+    margin: 1rem 0;
+    word-spacing: 3px;    /* Espaço entre palavras */
+    line-height: 1.2;     /* Espaço entre linhas */
+}
 
 
 
