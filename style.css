@@ -233,8 +233,12 @@ scroll-snap-type: y mandatory;
 }
 
 .content-aboutMe_img img{
-    width: 500px;
-    border-radius: 100px;
+    width: 550px;
+    height: 550px;
+    border-radius: 50%; /* Torna a imagem circular */
+    object-fit: cover; /* Garante que a imagem preencha o círculo */
+    border-bottom: 40px solid black;
+    border-left: 40px solid black;
 }
 
 .content-aboutMe_text{
@@ -250,6 +254,7 @@ scroll-snap-type: y mandatory;
 
 .content-aboutMe_text .teste h1{
     font-size: 50px;
+    border-radius: 5px;
     border-bottom: 4px solid #00DFFC;
 }
 
