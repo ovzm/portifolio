@@ -55,6 +55,10 @@ overflow: hidden; /* Remove a barra de rolagem */
 scroll-snap-type: y mandatory;
 }
 
+h1, h2{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
 /* ! SECTIONS */
 .section {
     height: 100vh; 
@@ -228,7 +232,7 @@ scroll-snap-type: y mandatory;
 }
 
 /* ! HOME TITLE */
-.teste{
+.home-text{
     width: 100%;
     height: 100%;
     display: flex;
@@ -283,14 +287,14 @@ scroll-snap-type: y mandatory;
     width: 30%;
 }
 
-.content-aboutMe_text .teste{
+.content-aboutMe_text .content-aboutMe_title{
     display: flex;
     width: auto;
     margin-bottom: 3rem;
     justify-content: left;
 }
 
-.content-aboutMe_text .teste h1{
+.content-aboutMe_text .content-aboutMe_title h1{
     font-size: 50px;
     border-radius: 5px;
     border-bottom: 4px solid #00DFFC;
@@ -309,12 +313,17 @@ scroll-snap-type: y mandatory;
     width: 100%;
     display: flex;
     flex-direction: column;
+    justify-content: center;
 }
 
 .content-skills .content-skills_title{
     display: flex;
     justify-content: center;
-    margin: 6rem 0 0 0;
+    margin: 0 0 4rem 0;
+}
+
+.content-skills .content-skills_title h1{
+    font-size: 50px;
 }
 
 .teste{
@@ -329,6 +338,8 @@ scroll-snap-type: y mandatory;
     justify-content: center;
     align-items: center;
     border-bottom: 4px solid white;
+    padding: 15px 0;
+    margin: 2rem 0;
 }
 
 .content-skills .frontEnd .frontEnd-imgs{
@@ -339,7 +350,8 @@ scroll-snap-type: y mandatory;
 }
 
 .content-skills .frontEnd img{
-    width: 90px;
+    width: 100px;
+    padding: 0 0 5px 0;
 }
 
 .content-skills .backEnd .backEnd-title{
@@ -348,6 +360,8 @@ scroll-snap-type: y mandatory;
     justify-content: center;
     align-items: center;
     border-bottom: 4px solid white;
+    padding: 15px 0;
+    margin: 2rem 0;
 }
 
 .content-skills .backEnd .backEnd-imgs{
@@ -358,7 +372,8 @@ scroll-snap-type: y mandatory;
 }
 
 .content-skills .backEnd img{
-    width: 90px;
+    width:100px;
+    padding: 0 0 5px 0;
 }
 
 .content-skills .tools .tools-title{
@@ -367,6 +382,8 @@ scroll-snap-type: y mandatory;
     justify-content: center;
     align-items: center;
     border-bottom: 4px solid white;
+    padding: 15px 0;
+    margin: 2rem 0;
 }
 
 .content-skills .tools .tools-imgs{
@@ -377,10 +394,12 @@ scroll-snap-type: y mandatory;
 }
 
 .content-skills .tools img{
-    width: 90px;
+    width: 100px;
+    padding: 0 0 5px 0;
 }
 
 .content-skills h1{
-    font-size: 35px;
+    font-size: 30px;
     color: white;
 }
+
