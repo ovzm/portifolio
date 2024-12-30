@@ -1,4 +1,4 @@
-// Seleciona o botão e o popup
+// ! POPUP MENU
 const openPopupBtn = document.getElementById('openPopupBtn');
 const popup = document.getElementById('popup');
 const closeBtn = document.querySelector('.close');
@@ -20,7 +20,7 @@ window.onclick = function (event) {
     }
 };
 
-// Seleciona todas as seções
+// ! SEÇÕES
 const sections = document.querySelectorAll('.section');
 let currentSectionIndex = 0;
 
@@ -50,34 +50,30 @@ window.addEventListener('keydown', (event) => {
     }
 });
 
-// Seleciona os botões fixos
+
+// ! BUTTONS UP/DOWN
 const btnUp = document.getElementById('btn-up');
 const btnDown = document.getElementById('btn-down');
 
-// Atualiza a visibilidade dos botões
 function updateButtonVisibility() {
-    btnUp.style.display = currentSectionIndex === 0 ? 'none' : 'block'; // Esconde o botão para subir na primeira seção
-    btnDown.style.display = currentSectionIndex === sections.length - 1 ? 'none' : 'block'; // Esconde o botão para descer na última seção
+    btnUp.style.display = currentSectionIndex === 0 ? 'none' : 'block'; 
+    btnDown.style.display = currentSectionIndex === sections.length - 1 ? 'none' : 'block'; 
 }
 
-// Chama a atualização da visibilidade sempre que mudar a seção
 function goToSection(index) {
     if (index >= 0 && index < sections.length) {
         sections[index].scrollIntoView({ behavior: 'smooth' });
         currentSectionIndex = index;
-        updateButtonVisibility(); // Atualiza os botões após a navegação
+        updateButtonVisibility(); 
     }
 }
 
-// Inicializa a visibilidade dos botões ao carregar a página
 updateButtonVisibility();
 
-// Eventos para os botões fixos
 btnUp.addEventListener('click', () => {
-    goToSection(currentSectionIndex - 1); // Botão para subir
+    goToSection(currentSectionIndex - 1); 
 });
 
 btnDown.addEventListener('click', () => {
-    goToSection(currentSectionIndex + 1); // Botão para descer
+    goToSection(currentSectionIndex + 1); 
 });
-
