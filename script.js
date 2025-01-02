@@ -1,5 +1,8 @@
 // ! Inicializando animação
-AOS.init();
+AOS.init({
+    once: true, // As animações só acontecem uma vez
+  });
+  
 
 // ! POPUP MENU
 const openPopupBtn = document.getElementById('openPopupBtn');
