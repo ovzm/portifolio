@@ -429,9 +429,23 @@ h1, h2, p{
 .card-list .card-item{
     width: 350px;
     height: 400px;
-
     border: 1px solid black;
     border-radius: 20px;
+    box-shadow:0 11px 15px 0 rgba(0,0,0,0.2);
+    transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.card-list .card-item::after{
+    transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.card-list .card-item:hover{
+    box-shadow:0 6px 15px 0 rgba(0,0,0,0.6);
+    transform:scale(1.25,1.25);
+}
+
+.card-list .card-item:hover::after{
+    opacity:1;
 }
 
 .card-list .card-item .card-image{
@@ -448,6 +462,7 @@ h1, h2, p{
 
 .card-list .card-item .card-text h1{
     font-size: 20px;
+    color: black;
 }
 
 .card-list .card-item .card-text h2{
@@ -456,17 +471,21 @@ h1, h2, p{
 }
 
 .card-list .card-item .card-text p{
-    font-size: 15px;
+    font-size: 14px;
+    margin: 1rem 5px 0 5px;
+    line-height: 1.1;
+    text-align: justify;
+    color: black;
 }
 
 .card-list .card-item .card-icons{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 5px;
+    padding: 13px;
 }
 
 .card-list .card-item .card-icons img{
     width: 40px;
-    padding: 5px;
+    padding: 0 5px;
 }

@@ -4,18 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <!-- ? AOS Animação -->
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
     <link rel="icon" href="assets/icon_logo/logo-v.png">
     <title>Portfólio - Victor Zawacki Monteiro</title>
 </head>
 <body>
 
-    <!-- Botões fixos para navegação -->
+    <!-- ? Botões fixos para navegação -->
     <div class="navigation-buttons">
         <button id="btn-up">↑</button>
         <button id="btn-down">↓</button>
     </div>
 
-    <!-- HEADER -->
+    <!-- ? HEADER -->
     <header>
         <div class="header">
             <div class="title">
@@ -62,37 +64,39 @@
         </div>
     </header>
 
-    <!-- SECTIONS -->
+    <!-- ? SECTIONS -->
+    <!-- ? HOME -->
     <section>
         <div class="section home">
             <div class="home-text">
                 <div class="home-title">
-                    <h1>Bem vindo</h1>
-                    <h2>ao meu portifólio</h2>
+                    <h1 data-aos="fade-up" data-aos-delay="500">Bem vindo</h1>
+                    <h2 data-aos="fade-up" data-aos-delay="600">ao meu portifólio</h2>
                 </div>
             </div>
         </div>
     </section>
       
+    <!-- ? ABOUT ME -->
     <section id="about" class="section aboutMe">
         <div class="content">
             <div class="content-aboutMe">
                 <div class="content-aboutMe_img">
-                    <img src="assets/img/img1.JPEG" alt="">
+                    <img data-aos="zoom-in" src="assets/img/img1.JPEG" alt="">
                 </div>
                 <div class="content-aboutMe_text">
                     <div class="content-aboutMe_title">
-                        <h1>Sobre mim</h1>
+                        <h1 data-aos="fade-down" data-aos-delay="200">Sobre mim</h1>
                     </div>
                     
                     
-                    <h2>Olá! Bem-vindo ao meu portfólio. Sou apaixonado por tecnologia e 
+                    <h2 data-aos="fade-down" data-aos-delay="600">Olá! Bem-vindo ao meu portfólio. Sou apaixonado por tecnologia e 
                         desenvolvimento, sempre buscando novas maneiras de solucionar problemas 
                         e criar projetos inovadores. Aqui, você encontrará uma seleção de meus trabalhos 
                         mais recentes, onde aplico minhas habilidades em desenvolvimento web.
                     </h2>
 
-                    <h2>Além disso, estou constantemente me aprimorando e explorando novas ideias. Fique 
+                    <h2 data-aos="fade-down" data-aos-delay="700">Além disso, estou constantemente me aprimorando e explorando novas ideias. Fique 
                         à vontade para explorar meus projetos atuais e ter uma visão do que estou desenvolvendo 
                         para o futuro.
                     </h2>
@@ -101,126 +105,137 @@
         </div>
     </section>
       
+    <!-- ? SKILLS -->
     <section id="skills" class="section skills">
         <div class="content-skills">
             <div class="content-skills_title">
-                <h1>Minhas Habilidades</h1>
+                <h1 data-aos="zoom-in" data-aos-delay="150">Minhas Habilidades</h1>
             </div>
             <div class="content-skills_column">
                 <div class="frontEnd">
-                    <div class="frontEnd-title">
-                        <img src="assets/icon_logo/front_end/code.png" alt="">
-                        <h1>Front-end</h1>
+                    <div data-aos="zoom-in" data-aos-delay="300" class="frontEnd-title">
+                        <img data-aos="zoom-in" data-aos-delay="300" src="assets/icon_logo/front_end/code.png" alt="">
+                        <h1 data-aos="zoom-in" data-aos-delay="400" >Front-end</h1>
                     </div>
                     <div class="frontEnd-imgs">
-                        <img src="assets/icon_logo/front_end/html-5.png" alt="">
-                        <img src="assets/icon_logo/front_end/css-3.png" alt="">
-                        <img src="assets/icon_logo/front_end/react.png" alt="">
-                        <img src="assets/icon_logo/front_end/js.png" alt="">
+                        <img data-aos="zoom-in" data-aos-delay="600" src="assets/icon_logo/front_end/html-5.png" alt="">
+                        <img data-aos="zoom-in" data-aos-delay="700" src="assets/icon_logo/front_end/css-3.png" alt="">
+                        <img data-aos="zoom-in" data-aos-delay="800" src="assets/icon_logo/front_end/react.png" alt="">
+                        <img data-aos="zoom-in" data-aos-delay="900" src="assets/icon_logo/front_end/js.png" alt="">
                     </div>
                 </div>
                 <div class="backEnd">
-                    <div class="backEnd-title">
-                        <img src="assets/icon_logo/back_end/backend.png" alt="">
-                        <h1>Back-end</h1>
+                    <div data-aos="zoom-in" data-aos-delay="1100" class="backEnd-title">
+                        <img data-aos="zoom-in" data-aos-delay="1100" src="assets/icon_logo/back_end/backend.png" alt="">
+                        <h1 data-aos="zoom-in" data-aos-delay="1200">Back-end</h1>
                     </div>
                     <div class="backEnd-imgs">
-                        <img src="assets/icon_logo/back_end/js.png" alt="">
-                        <img src="assets/icon_logo/back_end/mysql.png" alt="">
-                        <img src="assets/icon_logo/back_end/web.png" alt="">
-                        <img src="assets/icon_logo/back_end/java.png" alt="">
+                        <img data-aos="zoom-in" data-aos-delay="1400" src="assets/icon_logo/back_end/js.png" alt="">
+                        <img data-aos="zoom-in" data-aos-delay="1500" src="assets/icon_logo/back_end/mysql.png" alt="">
+                        <img data-aos="zoom-in" data-aos-delay="1600" src="assets/icon_logo/back_end/web.png" alt="">
+                        <img data-aos="zoom-in" data-aos-delay="1700" src="assets/icon_logo/back_end/java.png" alt="">
                     </div>
                 </div>
                 <div class="tools">
-                    <div class="tools-title">
-                        <img src="assets/icon_logo/tools/technical-support.png" alt="">
-                        <h1>Ferramentas</h1>
+                    <div data-aos="zoom-in" data-aos-delay="1900" class="tools-title">
+                        <img data-aos="zoom-in" data-aos-delay="1900" src="assets/icon_logo/tools/technical-support.png" alt="">
+                        <h1 data-aos="zoom-in" data-aos-delay="2000">Ferramentas</h1>
                     </div>
                     <div class="tools-imgs">
-                        <img src="assets/icon_logo/tools/github.png" alt="">
-                        <img src="assets/icon_logo/tools/vsCode.png" alt="">
-                        <img src="assets/icon_logo/tools/figma.png" alt="">
-                        <img src="assets/icon_logo/tools/git.png" alt="">
+                        <img data-aos="zoom-in" data-aos-delay="2200" src="assets/icon_logo/tools/github.png" alt="">
+                        <img data-aos="zoom-in" data-aos-delay="2300" src="assets/icon_logo/tools/vsCode.png" alt="">
+                        <img data-aos="zoom-in" data-aos-delay="2400" src="assets/icon_logo/tools/figma.png" alt="">
+                        <img data-aos="zoom-in" data-aos-delay="2500" src="assets/icon_logo/tools/git.png" alt="">
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-
+    <!-- ? PROJECTS -->
     <section id="projects" class="section projects">
         <div class="content-projects">
-            <h1 class="projects-title">Projetos</h1>
+            <h1 data-aos="fade-down" data-aos-delay="200" class="projects-title">Projetos web</h1>
             <div class="projects-carousel">
                 <div class="card-list">
-                    <div class="card-item">
-                        <img class="card-image" src="assets/img/petz.png" alt="Imagem Projeto">
-                        <div class="card-text">
-                            <h1>Petz</h1>
-                            <h2>Website loja de cosméticos para animais</h2>
-                            <p>
-                                Petz é um site que eu fiz com base no proprio site da petz. Petz é um site que eu fiz com base no proprio site da petz. Petz 
-                                é um site que eu fiz com base no proprio site da petz. Petz é um site que eu fiz com base no proprio site da petz. Petz é um 
-                                site que eu fiz com base no proprio site da petz.
-                            </p>
-                            <div class="card-icons">
-                                <img src="assets/icon_logo/front_end/html-5.png" alt="">
-                                <img src="assets/icon_logo/front_end/js.png" alt="">
-                                <img src="assets/icon_logo/front_end/css-3.png" alt="">
+                    <div data-aos="fade-down" data-aos-delay="400" class="card-item">
+                        <a target="_blank" href="https://github.com/ovzm/project_petz">
+                            <img data-aos="zoom-in" data-aos-delay="600" class="card-image" src="assets/img/petz.png" alt="Imagem Projeto">
+                            <div class="card-text">
+                                <h1 data-aos="fade-down" data-aos-delay="600">Petz</h1>
+                                <h2 data-aos="fade-down" data-aos-delay="700">Website loja de cosméticos para animais</h2>
+                                <p data-aos="fade-down" data-aos-delay="800">
+                                    Petz é um site que eu fiz com base no proprio site da petz. Petz é um site que eu fiz com base no proprio site da petz. Petz 
+                                    é um site que eu fiz com base no proprio site da petz. Petz é um site que eu fiz com base no proprio site da petz. Petz é um 
+                                    site que eu fiz com base no proprio site da petz.
+                                </p>
+                                <div data-aos="fade-down" data-aos-delay="900" class="card-icons">
+                                    <img  src="assets/icon_logo/front_end/html-5.png" alt="">
+                                    <img src="assets/icon_logo/front_end/js.png" alt="">
+                                    <img src="assets/icon_logo/front_end/css-3.png" alt="">
+                                </div>
                             </div>
-                        </div>
+                        </a>
                     </div>    
                 </div>
 
                 <div class="card-list">
-                    <div class="card-item">
-                        <img class="card-image" src="assets/img/petz.png" alt="Imagem Projeto">
-                        <div class="card-text">
-                            <h1>Petz</h1>
-                            <h2>Website loja de cosméticos para animais</h2>
-                            <p>
-                                Petz é um site que eu fiz com base no proprio site da petz. Petz é um site que eu fiz com base no proprio site da petz. Petz 
-                                é um site que eu fiz com base no proprio site da petz. Petz é um site que eu fiz com base no proprio site da petz. Petz é um 
-                                site que eu fiz com base no proprio site da petz.
-                            </p>
-                            <div class="card-icons">
-                                <img src="assets/icon_logo/front_end/html-5.png" alt="">
-                                <img src="assets/icon_logo/front_end/js.png" alt="">
-                                <img src="assets/icon_logo/front_end/css-3.png" alt="">
+                    <div data-aos="fade-down" data-aos-delay="400" class="card-item">
+                        <a target="_blank" href="https://github.com/ovzm/project_petz">
+                            <img data-aos="zoom-in" data-aos-delay="600" class="card-image" src="assets/img/petz.png" alt="Imagem Projeto">
+                            <div class="card-text">
+                                <h1 data-aos="fade-down" data-aos-delay="600">Petz</h1>
+                                <h2 data-aos="fade-down" data-aos-delay="700">Website loja de cosméticos para animais</h2>
+                                <p data-aos="fade-down" data-aos-delay="800">
+                                    Petz é um site que eu fiz com base no proprio site da petz. Petz é um site que eu fiz com base no proprio site da petz. Petz 
+                                    é um site que eu fiz com base no proprio site da petz. Petz é um site que eu fiz com base no proprio site da petz. Petz é um 
+                                    site que eu fiz com base no proprio site da petz.
+                                </p>
+                                <div data-aos="fade-down" data-aos-delay="900" class="card-icons">
+                                    <img  src="assets/icon_logo/front_end/html-5.png" alt="">
+                                    <img src="assets/icon_logo/front_end/js.png" alt="">
+                                    <img src="assets/icon_logo/front_end/css-3.png" alt="">
+                                </div>
                             </div>
-                        </div>
+                        </a>
                     </div>    
                 </div>
 
                 <div class="card-list">
-                    <div class="card-item">
-                        <img class="card-image" src="assets/img/petz.png" alt="Imagem Projeto">
-                        <div class="card-text">
-                            <h1>Petz</h1>
-                            <h2>Website loja de cosméticos para animais</h2>
-                            <p>
-                                Petz é um site que eu fiz com base no proprio site da petz. Petz é um site que eu fiz com base no proprio site da petz. Petz 
-                                é um site que eu fiz com base no proprio site da petz. Petz é um site que eu fiz com base no proprio site da petz. Petz é um 
-                                site que eu fiz com base no proprio site da petz.
-                            </p>
-                            <div class="card-icons">
-                                <img src="assets/icon_logo/front_end/html-5.png" alt="">
-                                <img src="assets/icon_logo/front_end/js.png" alt="">
-                                <img src="assets/icon_logo/front_end/css-3.png" alt="">
+                    <div data-aos="fade-down" data-aos-delay="400" class="card-item">
+                        <a target="_blank" href="https://github.com/ovzm/project_petz">
+                            <img data-aos="zoom-in" data-aos-delay="600" class="card-image" src="assets/img/petz.png" alt="Imagem Projeto">
+                            <div class="card-text">
+                                <h1 data-aos="fade-down" data-aos-delay="600">Petz</h1>
+                                <h2 data-aos="fade-down" data-aos-delay="700">Website loja de cosméticos para animais</h2>
+                                <p data-aos="fade-down" data-aos-delay="800">
+                                    Petz é um site que eu fiz com base no proprio site da petz. Petz é um site que eu fiz com base no proprio site da petz. Petz 
+                                    é um site que eu fiz com base no proprio site da petz. Petz é um site que eu fiz com base no proprio site da petz. Petz é um 
+                                    site que eu fiz com base no proprio site da petz.
+                                </p>
+                                <div data-aos="fade-down" data-aos-delay="900" class="card-icons">
+                                    <img  src="assets/icon_logo/front_end/html-5.png" alt="">
+                                    <img src="assets/icon_logo/front_end/js.png" alt="">
+                                    <img src="assets/icon_logo/front_end/css-3.png" alt="">
+                                </div>
                             </div>
-                        </div>
+                        </a>
                     </div>    
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- ? FOOTER -->
     <section id="footer" class="section footer">
         <div class="content">
             
         </div>
     </section>
 
+    <!-- ? AOS Animação-->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    
     <script src="script.js"></script>
 </body>
 </html>

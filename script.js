@@ -1,3 +1,6 @@
+// ! Inicializando animação
+AOS.init();
+
 // ! POPUP MENU
 const openPopupBtn = document.getElementById('openPopupBtn');
 const popup = document.getElementById('popup');
