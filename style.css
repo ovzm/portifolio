@@ -495,15 +495,15 @@ h1, h2, p{
 .footer {
     color: #fff;
     padding: 40px 20px;
-    font-family: 'Arial', sans-serif;
 }
 
 .footer-container {
-    max-width: 1500px;
+    width: 1200px;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
-    gap: 40px;
+    justify-content: center;
+    gap: 50px;
 }
 
 .footer-content {
@@ -515,21 +515,27 @@ h1, h2, p{
 
 .footer-links {
     display: flex;
-    justify-content: space-between;
     width: 50%;
     gap: 40px;
 }
 
-.footer-contact, .footer-navigation {
+.footer-navigation {
     display: flex;
     flex-direction: column;
-    gap: 8px;
+    gap: 10px;
+    margin: 0 5rem;
+}
+
+.footer-contact{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
 .footer-contact a, .footer-navigation a {
     color: #fff;
     text-decoration: none;
-    font-size: 16px;
+    font-size: 20px;
     transition: color 0.3s;
 }
 
@@ -538,7 +544,7 @@ h1, h2, p{
 }
 
 .footer-logo a {
-    font-size: 24px;
+    font-size: 40px;
     font-weight: bold;
     text-decoration: none;
     color: #fff;
@@ -554,6 +560,7 @@ h1, h2, p{
     align-items: center;
     border-top: 1px solid #333;
     padding-top: 20px;
+    margin: 20rem 0 5rem 0;
 }
 
 .footer-bottom p {
