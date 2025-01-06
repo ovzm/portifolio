@@ -1,10 +1,31 @@
 // ! Inicializando animação
 AOS.init({
     once: true, // As animações só acontecem uma vez
-  });
-  
+});
 
 // ! POPUP MENU
+const openPopupMenu = document.getElementById('openPopupMenu');
+const popupMenu = document.getElementById('popupMenu');
+const closeMenu = document.querySelector('.closeMenu');
+
+// Função para abrir o popup
+openPopupMenu.onclick = function () {
+    popupMenu.style.display = 'flex';
+};
+
+// Função para fechar o popup ao clicar no botão de fechar
+closeMenu.onclick = function () {
+    popupMenu.style.display = 'none';
+};
+
+// Fecha o popup ao clicar fora do conteúdo
+window.onclick = function (event) {
+    if (event.target == popupMenu) {
+        popupMenu.style.display = 'none';
+    }
+};
+
+// ! POPUP MENU NavBar
 const openPopupBtn = document.getElementById('openPopupBtn');
 const popup = document.getElementById('popup');
 const closeBtn = document.querySelector('.close');
@@ -35,6 +56,7 @@ function goToSection(index) {
     if (index >= 0 && index < sections.length) {
         sections[index].scrollIntoView({ behavior: 'smooth' });
         currentSectionIndex = index;
+        updateButtonVisibility();
     }
 }
 
@@ -56,30 +78,22 @@ window.addEventListener('keydown', (event) => {
     }
 });
 
-
 // ! BUTTONS UP/DOWN
 const btnUp = document.getElementById('btn-up');
 const btnDown = document.getElementById('btn-down');
 
 function updateButtonVisibility() {
-    btnUp.style.display = currentSectionIndex === 0 ? 'none' : 'block'; 
-    btnDown.style.display = currentSectionIndex === sections.length - 1 ? 'none' : 'block'; 
+    btnUp.style.display = currentSectionIndex === 0 ? 'none' : 'block';
+    btnDown.style.display = currentSectionIndex === sections.length - 1 ? 'none' : 'block';
 }
-
-function goToSection(index) {
-    if (index >= 0 && index < sections.length) {
-        sections[index].scrollIntoView({ behavior: 'smooth' });
-        currentSectionIndex = index;
-        updateButtonVisibility(); 
-    }
-}
-
-updateButtonVisibility();
 
 btnUp.addEventListener('click', () => {
-    goToSection(currentSectionIndex - 1); 
+    goToSection(currentSectionIndex - 1); // Subir uma seção
 });
 
 btnDown.addEventListener('click', () => {
-    goToSection(currentSectionIndex + 1); 
+    goToSection(currentSectionIndex + 1); // Descer uma seção
 });
+
+// Chama a função para ajustar a visibilidade dos botões
+updateButtonVisibility();

@@ -583,3 +583,107 @@ h1, h2, p{
 .footer-social a:hover {
     color: #0097EE;
 }
+
+  
+
+
+
+
+
+
+
+
+
+
+/* Botão de menu fixo */
+.testeMenu {
+    display: block; /* Exibe o botão por padrão */
+    position: fixed;
+    top: 20px; /* Posicionado no canto superior direito */
+    right: 20px;
+    z-index: 1000; /* Garantir que fique acima dos outros elementos */
+  }
+  
+  .testeMenu button {
+    background-color: #333; /* Cor de fundo do botão */
+    color: white; /* Cor do texto/ícone */
+    border: none; /* Sem bordas */
+    border-radius: 50%; /* Torna o botão circular */
+    padding: 10px; /* Tamanho interno do botão */
+    width: 40px; /* Largura fixa */
+    height: 40px; /* Altura fixa */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer; /* Mostra o ponteiro ao passar por cima */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Adiciona sombra ao botão */
+    transition: transform 0.3s ease, background-color 0.3s ease; /* Transição para animações */
+  }
+  
+  /* Efeito ao passar o mouse */
+  .testeMenu button:hover {
+    background-color: #555; /* Muda a cor ao passar o mouse */
+    transform: scale(1.1); /* Aumenta levemente o tamanho ao passar o mouse */
+  }
+  
+  .testeMenu button img {
+    width: 20px; /* Tamanho do ícone dentro do botão */
+    height: 20px;
+  }
+
+  .testeMenu .popup {
+    display: none; 
+    position: absolute; 
+    top: 0; 
+    right: 0;
+    background-color: white;
+    border-radius: 10px 0 10px 10px;
+    padding: 10px;
+}
+
+ .testeMenu .popup .popup-content {
+    width: 150px; 
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+}
+
+ .testeMenu .popup .popup-content .popup-menu {
+    padding: 20px 0;
+    border-bottom: 1px solid black;
+}
+
+ .testeMenu .popup .popup-content .popup-menu li{
+    padding: 2px 0;
+    color: black;
+}
+
+ .testeMenu .popup .popup-content .closeMenu {
+    position: absolute;
+    right: 0;
+    top: 0;
+    cursor: pointer;
+    padding: 10px;
+}
+
+ .testeMenu .popup .popup-content .closeMenu img{
+    width: 20px;
+    height: 20px;
+}
+
+ .testeMenu .popup .popup-content .popup-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0 0 0 ;
+}
+
+.testeMenu .popup .popup-content .popup-icons img{
+    width: 25px;
+    height: 25px;
+    padding: 0 4px;
+}
+
+.testeMenu button {
+    cursor: pointer;
+}
