@@ -4,26 +4,26 @@ AOS.init({
 });
 
 // ! POPUP MENU
-const openPopupMenu = document.getElementById('openPopupMenu');
-const popupMenu = document.getElementById('popupMenu');
-const closeMenu = document.querySelector('.closeMenu');
+// const openPopupMenu = document.getElementById('openPopupMenu');
+// const popupMenu = document.getElementById('popupMenu');
+// const closeMenu = document.querySelector('.closeMenu');
 
-// Função para abrir o popup
-openPopupMenu.onclick = function () {
-    popupMenu.style.display = 'flex';
-};
+// // Função para abrir o popup
+// openPopupMenu.onclick = function () {
+//     popupMenu.style.display = 'flex';
+// };
 
-// Função para fechar o popup ao clicar no botão de fechar
-closeMenu.onclick = function () {
-    popupMenu.style.display = 'none';
-};
+// // Função para fechar o popup ao clicar no botão de fechar
+// closeMenu.onclick = function () {
+//     popupMenu.style.display = 'none';
+// };
 
-// Fecha o popup ao clicar fora do conteúdo
-window.onclick = function (event) {
-    if (event.target == popupMenu) {
-        popupMenu.style.display = 'none';
-    }
-};
+// // Fecha o popup ao clicar fora do conteúdo
+// window.onclick = function (event) {
+//     if (event.target == popupMenu) {
+//         popupMenu.style.display = 'none';
+//     }
+// };
 
 // ! POPUP MENU NavBar
 // const openPopupBtn = document.getElementById('openPopupBtn');
