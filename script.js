@@ -26,26 +26,26 @@ window.onclick = function (event) {
 };
 
 // ! POPUP MENU NavBar
-const openPopupBtn = document.getElementById('openPopupBtn');
-const popup = document.getElementById('popup');
-const closeBtn = document.querySelector('.close');
+// const openPopupBtn = document.getElementById('openPopupBtn');
+// const popup = document.getElementById('popup');
+// const closeBtn = document.querySelector('.close');
 
 // Função para abrir o popup
-openPopupBtn.onclick = function () {
-    popup.style.display = 'flex'; // Mostra o popup com flexbox para centralizar
-};
+// openPopupBtn.onclick = function () {
+//    popup.style.display = 'flex'; // Mostra o popup com flexbox para centralizar
+// };
 
 // Função para fechar o popup ao clicar no botão de fechar
-closeBtn.onclick = function () {
-    popup.style.display = 'none'; // Esconde o popup
-};
+// closeBtn.onclick = function () {
+//    popup.style.display = 'none'; // Esconde o popup
+// };
 
 // Fecha o popup ao clicar fora do conteúdo
-window.onclick = function (event) {
-    if (event.target == popup) {
-        popup.style.display = 'none'; // Esconde o popup
-    }
-};
+// window.onclick = function (event) {
+//    if (event.target == popup) {
+//        popup.style.display = 'none'; // Esconde o popup
+//    }
+// };
 
 // ! SEÇÕES
 const sections = document.querySelectorAll('.section');
@@ -97,3 +97,5 @@ btnDown.addEventListener('click', () => {
 
 // Chama a função para ajustar a visibilidade dos botões
 updateButtonVisibility();
+
+

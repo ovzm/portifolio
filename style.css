@@ -140,18 +140,37 @@ h1, h2, p{
     height: 80px; 
     display: flex;
     position: absolute;    
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
+}
+
+.header .title{
+    transition: transform 0.4s ease, background-color 0.4s ease;
+    margin-left: 9rem;
+    padding: 6px 5px;
+    border-radius: 0 0 0px 20px;
 }
 
 .header .title a{
     font-size: 30px;
-    color: white;
+    color: white; 
+}
+
+.header .title:hover{
+    transform: scale(1.1);
+    /* background-color: #141414; */
+    box-shadow:  -4px 5px 6px #0097ee93;
+    /* text-shadow: -7px 11px 6px #007ACC; */
+}
+
+.header .navbar{
+    margin-right: 9rem;
 }
 
 .header .navbar li {
     float: left; 
     margin: 0 15px;
+    padding-bottom: 3px;
 }
 
 .header .navbar a{
@@ -159,76 +178,8 @@ h1, h2, p{
     font-size: 20px;
 }
 
-.header .headerMenu img{
-    width: 35px;
-    height: 25px;
-}
-
-.header .headerMenu button{
-    background-color: transparent;
-    border: none;
-}
-
-/* ! MENU BUTTON */
-.header .headerMenu {
-    position: relative; 
-}
-
-.header .headerMenu .popup {
-    display: none; 
-    position: absolute; 
-    top: 0; 
-    right: 0;
-    background-color: white;
-    border-radius: 10px 0 10px 10px;
-    padding: 10px;
-}
-
-.header .headerMenu .popup .popup-content {
-    width: 150px; 
-    display: flex;
-    flex-direction: column;
-    margin: 1rem;
-}
-
-.header .headerMenu .popup .popup-content .popup-menu {
-    padding: 20px 0;
-    border-bottom: 1px solid black;
-}
-
-.header .headerMenu .popup .popup-content .popup-menu li{
-    padding: 2px 0;
-    color: black;
-}
-
-.header .headerMenu .popup .popup-content .close {
-    position: absolute;
-    right: 0;
-    top: 0;
-    cursor: pointer;
-    padding: 10px;
-}
-
-.header .headerMenu .popup .popup-content .close img{
-    width: 20px;
-    height: 20px;
-}
-
-.header .headerMenu .popup .popup-content .popup-icons {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 10px 0 0 0 ;
-}
-
-.header .headerMenu .popup .popup-content .popup-icons img{
-    width: 25px;
-    height: 25px;
-    padding: 0 4px;
-}
-
-.header .headerMenu button {
-    cursor: pointer;
+.header .navbar a:hover{
+    color: #0097EE;
 }
 
 /* ! HOME TITLE */
@@ -584,18 +535,8 @@ h1, h2, p{
     color: #0097EE;
 }
 
-  
+/* ! Botão de menu fixo */
 
-
-
-
-
-
-
-
-
-
-/* Botão de menu fixo */
 .testeMenu {
     display: block; /* Exibe o botão por padrão */
     position: fixed;
@@ -687,3 +628,5 @@ h1, h2, p{
 .testeMenu button {
     cursor: pointer;
 }
+
+/* ! MENU NAVBAR */ 
