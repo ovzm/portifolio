@@ -5,18 +5,11 @@
 
 /* ! RESET */
 html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
+h1, h2, h3, h4, h5, h6, p, a, img, var,
 b, u, i, center,
 dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+footer, header, menu, nav, section{
  margin: 0;
  padding: 0;
  border: 0;
@@ -67,33 +60,33 @@ h1, h2, p{
 }
 
 .home {
-    background-image: url(assets/background/Home.png); 
+    background-image: url(assets/background/home.png); 
     background-size: cover;
-    background-position: center;
+    background-position: bottom;
 }
 
 .aboutMe {
     background-image: url(assets/background/aboutMe.png); 
     background-size: cover;
-    background-position: center;
+    background-position: top;
 }
 
 .skills {
-    background-image: url(assets/background/Footer.png); 
+    background-image: url(assets/background/skills.png); 
     background-size: cover;
-    background-position: center;
+    background-position: bottom;
     }
 
 .projects {
     background-image: url(assets/background/projects.png); 
     background-size: cover;
-    background-position: center;
+    background-position: top;
 }
 
 .footer {
-    background-image: url(assets/background/Footer.png); 
+    background-image: url(assets/background/footer.png); 
     background-size: cover;
-    background-position: center;
+    background-position: bottom;
 }
 
 /* ! Botões fixos de navegação */
@@ -108,8 +101,8 @@ h1, h2, p{
 }
 
 .navigation-buttons button {
-    background-color: #0097EE;
-    color: white;
+    background-color: white;
+    color: #0097EE;
     border: none;
     border-radius: 50%;
     width: 50px;
@@ -536,7 +529,6 @@ h1, h2, p{
 }
 
 /* ! Botão de menu fixo */
-
 .testeMenu {
     display: block; /* Exibe o botão por padrão */
     position: fixed;
@@ -629,4 +621,158 @@ h1, h2, p{
     cursor: pointer;
 }
 
-/* ! MENU NAVBAR */ 
+/* ! MEDIA QUERIE*/ 
+
+@media (min-width: 320px) and (max-width: 480px) {
+    
+    body {
+        font-family: Arial, sans-serif;
+        overflow: auto;
+        scroll-snap-type: none;
+    }
+
+    /* ! HEADER */
+    .header{
+        width: 100%;
+        height: 80px; 
+        display: flex;
+        position: absolute;    
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .header .title{
+        transition: transform 0.4s ease, background-color 0.4s ease;
+        margin-left: 1rem;
+        padding: 6px 5px;
+        border-radius: 0 0 0px 20px;
+    }
+
+    .header .title a{
+        font-size: 30px;
+        color: white; 
+    }
+
+    .header .title:hover{
+        transform: scale(1.1);
+        /* background-color: #141414; */
+        box-shadow:  none;
+        /* text-shadow: -7px 11px 6px #007ACC; */
+    }
+
+    .header .navbar{
+        margin-right: 1rem;
+    }
+
+    .header .navbar li {
+        float: left; 
+        margin: 0 15px;
+        padding-bottom: 3px;
+    }
+
+    .header .navbar a{
+        color: white;
+        font-size: 20px;
+    }
+
+    .header .navbar a:hover{
+        color: #0097EE;
+    }
+
+    /* ! HOME TITLE */
+    .home-text{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: right;
+        align-items: center;
+    }
+
+    .home-title{
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        margin-right: 1rem;
+    }
+
+    .home-title h1{
+        color: white;
+        font-size: 55px;
+    }
+
+    .home-title h2{
+        color: white;
+        font-size: 45px;
+    }
+
+    /* ! ABOUT ME */
+
+    .content{
+        width: 100%;
+        display: flex;
+    }
+
+    .content-aboutMe{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+    }
+
+    .content-aboutMe_img {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin: 0 0 2rem 0;
+    }
+
+    .content-aboutMe_img img{
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        object-fit: cover;
+        border-bottom: 15px solid black;
+        border-left: 15px solid black;
+    }
+
+    .content-aboutMe_text{
+        width: 80%;
+        margin: 2rem 0;
+        text-align: justify;
+    }
+
+    .content-aboutMe_text .content-aboutMe_title{
+        display: flex;
+        width: auto;
+        margin-bottom: 1rem;
+        justify-content: center;
+    }
+
+    .content-aboutMe_text .content-aboutMe_title h1{
+        font-size: 40px;
+        border-radius: 5px;
+        border-bottom: 4px solid #00DFFC;
+    }
+
+    .content-aboutMe_text h2{
+        font-size: 15px;
+        margin: 1rem 0;
+        word-spacing: 1;    /* Espaço entre palavras */
+        line-height: 1.1;     /* Espaço entre linhas */
+    }
+    
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    
+}
+
+@media (min-width: 1025px) and (max-width: 1200px) {
+    
+}
