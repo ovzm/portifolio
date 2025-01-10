@@ -79,14 +79,14 @@ h1, h2, p{
 
 .projects {
     background-image: url(assets/background/projects.png); 
-    background-size: cover;
+    background-size: 100% 100%;
     background-position: top;
 }
 
 .footer {
     background-image: url(assets/background/footer.png); 
     background-size: cover;
-    background-position: bottom;
+    background-position: top;
 }
 
 /* ! Botões fixos de navegação */
@@ -655,6 +655,14 @@ h1, h2, p{
         font-family: Arial, sans-serif;
         overflow: auto;
         scroll-snap-type: none;
+    }
+
+    /* ajustar conforme necessário o tamanho de altura que a pagina vai ficar e o tamanho da imagem para que elas se complementem */
+    .aboutMe {
+        background-image: url(assets/background/aboutMe.png); 
+        background-size: 388% 100%;
+        background-position: top;
+        height: 150vh;
     }
 
     /* ! HEADER */
