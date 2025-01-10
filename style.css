@@ -238,17 +238,43 @@ h1, h2, p{
     justify-content: left;
 }
 
+.content-aboutMe_text .content-aboutMe_title img{
+    width: 55px;
+    margin-right: 1rem;
+}
+
 .content-aboutMe_text .content-aboutMe_title h1{
     font-size: 50px;
+    color: #0097EE;
     border-radius: 5px;
-    border-bottom: 4px solid #00DFFC;
+    font-weight: bold;
 }
 
 .content-aboutMe_text h2{
     font-size: 20px;
+    text-align: justify;
     margin: 1rem 0;
     word-spacing: 3px;    /* Espaço entre palavras */
     line-height: 1.2;     /* Espaço entre linhas */
+}
+
+.content-aboutMe_studing{
+    display: flex;  
+    margin-top: 2rem;
+    align-items: center;  
+}
+
+
+.content-aboutMe_studing h1{
+    color: #0097EE; 
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.content-aboutMe_studing img{
+    width: 45px;
+    height: 45px;
+    padding: 0 5px;
 }
 
 /* ! HABILIDADES */
