@@ -128,6 +128,79 @@ h1, h2, p{
 }
 
 /* ! HEADER */
+
+  #menu {
+    display: flex;
+    list-style: none;
+    gap: 0.5rem;
+  }
+ 
+  
+  #btn-mobile {
+    display: none;
+  }
+  
+  @media (max-width: 600px) {
+    .header .nav .menu {
+      display: block;
+      position: absolute;
+      width: 100%;
+      top: 70px;
+      right: 0px;
+      background: #007ACC;
+      transition: 0.6s;
+      z-index: 1000;
+      height: 0px;
+      visibility: hidden;
+      overflow-y: hidden;
+    }
+    #nav.active #menu {
+      height: calc(100vh - 70px);
+      visibility: visible;
+      overflow-y: auto;
+    }
+    .header .nav .menu a {
+      padding: 1rem 0;
+      margin: 0 1rem;
+      border-bottom: 2px solid white;
+    }
+    #btn-mobile {
+      display: flex;
+      padding: 0.5rem 1rem;
+      font-size: 1rem;
+      border: none;
+      background: none;
+      cursor: pointer;
+      color: white;
+      gap: 0.5rem;
+    }
+    #hamburger {
+      border-top: 2px solid;
+      width: 20px;
+    }
+    #hamburger::after,
+    #hamburger::before {
+      content: '';
+      display: block;
+      width: 20px;
+      height: 2px;
+      background: currentColor;
+      margin-top: 5px;
+      transition: 0.3s;
+      position: relative;
+    }
+    #nav.active #hamburger {
+      border-top-color: transparent;
+    }
+    #nav.active #hamburger::before {
+      transform: rotate(135deg);
+    }
+    #nav.active #hamburger::after {
+      transform: rotate(-135deg);
+      top: -7px;
+    }
+  }
+
 .header{
     width: 100%;
     height: 80px; 
@@ -142,11 +215,11 @@ h1, h2, p{
     margin-left: 9rem;
     padding: 6px 5px;
     border-radius: 0 0 0px 20px;
+    font-size: 30px;
 }
 
 .header .title a{
-    font-size: 30px;
-    color: white; 
+    color: white;
 }
 
 .header .title:hover{
@@ -154,28 +227,29 @@ h1, h2, p{
     /* background-color: #141414; */
     box-shadow:  -4px 5px 6px #0097ee93;
     /* text-shadow: -7px 11px 6px #007ACC; */
-}
+} 
 
-.header .navbar{
+.header .nav{
     margin-right: 9rem;
 }
 
-.header .navbar li {
+.header .nav li {
     float: left; 
     margin: 0 15px;
     padding-bottom: 3px;
 }
 
-.header .navbar a{
+.header .nav a{
     color: white;
     font-size: 20px;
 }
 
-.header .navbar a:hover{
+.header .nav a:hover{
     color: #0097EE;
 }
 
 /* ! HOME TITLE */
+
 .home-text{
     width: 100%;
     height: 100%;
@@ -810,3 +884,5 @@ h1, h2, p{
 @media (min-width: 1025px) and (max-width: 1200px) {
     
 }
+
+
