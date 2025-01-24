@@ -98,7 +98,7 @@ btnDown.addEventListener('click', () => {
 // Chama a função para ajustar a visibilidade dos botões
 updateButtonVisibility();
 
-
+// Função menu navbar
 const btnMobile = document.getElementById('btn-mobile');
 
 function toggleMenu(event) {
